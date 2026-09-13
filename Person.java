@@ -2,7 +2,10 @@ public class Person {
    private String name;
    private int age;
    private String email;
-
+    
+public Person(){
+    
+}
     
    public void setName(String n){
     name = n;
@@ -28,13 +31,13 @@ public class Person {
         return email;
     }
 
-    public static void displayInfo(){
-    System.out.println("The Animal is "+peep1.getAnimal());
-    System.out.println("The Age is "+peep1.getAge());
-    System.out.println("The Name is "+peep1.getName());
-    System.out.println("The Animal is "+peep2.getAnimal());
-    System.out.println("The Age is "+peep2.getAge());
-    System.out.println("The Name is "+peep2.getName());
+    public void displayInfo(){
+    System.out.println("Person Information");
+    System.out.println("--------------------");
+    System.out.println("Name: "+name);
+    System.out.println("Age: "+age);
+    System.out.println("Email: "+email);
+    System.out.println();
 
     }
 
